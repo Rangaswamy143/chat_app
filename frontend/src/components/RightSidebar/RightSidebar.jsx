@@ -1,6 +1,7 @@
 import React from "react";
 import "./rightsidebar.css";
 import assets from "../../assets/assets";
+import { Logout } from "../../config/FaireBase";
 
 const RightSidebar = () => {
   return (
@@ -25,7 +26,7 @@ const RightSidebar = () => {
           <img src={assets.pic2} alt="pic" />
         </div>
       </div>
-      <button>Logout</button>
+      <button onClick={() => Logout()}>Logout</button>
     </div>
   );
 };
